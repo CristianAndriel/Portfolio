@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Roboto";
+}
+
+:root {
+  --main-color: #272727;
+  --secondary-color: #9c9c9c;
+
+  --btn-color: #4964ff;
+  --btn-width: 20px;
+  --btn-heigth: 30px;
+}
+
+main {
+  margin-left: 40%;
+  margin-top: 7%;
+}
+
+.main-cabecalho {
+  display: flex;
+}
+
+.hero-rigth h2 {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--main-color);
+}
+
+.hero-rigth h5 {
+  color: var(--secondary-color);
+  font-weight: 300;
+  margin-top: 1%;
+}
+
+.nav-menu ul {
+  display: flex;
+  margin-top: 1%;
+  gap: 10px;
+}
+
+.nav-menu a {
+  color: var(--secondary-color);
+}
+
+.nav-menu a:hover {
+  color: var(--main-color);
+}
+
+.main-content {
+  margin-top: 1%;
+}
+
+.main-content h1, h3{
+  color: var(--main-color);
+}
+
+.main-content p,
+h3,
+button {
+  margin-top: 1%;
+}
+
+p {
+  color: var(--secondary-color);
+  font-weight: 300;
+}
+
+.btn-container {
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid var(--secondary-color);
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.btn-container:hover {
+  border: 1px solid var(--btn-color);
+  color: var(--btn-color);
+  font-weight: bold;
+  transition: 1s;
+}
+.container-box {
+  width: 400px;
+  height: 200px;
+  margin-top: 1%;
+  background-color: black;
+}
+
+.container-box i {
+  color: rgb(255, 255, 255);
+  width: 400px;
+  height: 300px;
+  font-size: 50px;
+  text-align: center;
+  margin-top: 19%;
+}
+
+.rodape {
+  margin-top: 10%;
+  margin-left: 60px;
+  width: 22%;
+  font-size: 12px;
+  text-align: center;
+}
+
+.rodape i {
+  color: var(--secondary-color);
+}
