@@ -18,7 +18,7 @@
 
 main {
   margin-left: 40%;
-  margin-top: 7%;
+  margin-top: 3%;
 }
 
 .main-cabecalho {
@@ -100,8 +100,43 @@ p {
   margin-top: 19%;
 }
 
+.projetos {
+  margin: 40px 0;
+  padding: 20px;
+}
+
+.projetos h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.projeto-item {
+  background-color: transparent;
+  border: 1px solid var(--secondary-color);
+  width: 500px;
+  margin-left: -100px;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.projeto-item h3 {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.projeto-item p {
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+
+.projeto-botoes {
+  display: flex;
+  gap: 10px;
+}
+
 .rodape {
-  margin-top: 10%;
+  margin-top: 3%;
   margin-left: 60px;
   width: 22%;
   font-size: 12px;
