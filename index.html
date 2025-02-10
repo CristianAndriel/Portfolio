@@ -1,166 +1,236 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/styles/global.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/styles/global.css" />
     <link
-        href="https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <title>Cristian Andriel | Portfólio</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
+    <button id="toggleDarkMode" class="dark-mode-toggle">
+        <i class="fa-solid fa-moon"></i>
+      </button>
+      
     <div class="container">
-        <section class="about">
-            <div class="img-profile">
-                <img src="./assets/imgs/profile.jpg" alt="">
-                <h2>Cristian Andriel Silva</h2>
+      <section class="about">
+        <div class="img-profile">
+          <img src="./assets/imgs/profile.jpg" alt="" />
+          <h2>Cristian Andriel Silva</h2>
+        </div>
+
+        <nav class="nav-menu">
+          <ul>
+            <li>
+              <a href="#Habilidades"
+                ><i class="fa-solid fa-screwdriver-wrench"></i> Habilidades</a
+              >
+            </li>
+            <li>
+              <a href="#Experiencias"
+                ><i class="fa-solid fa-briefcase"></i> Experiências</a
+              >
+            </li>
+            <li>
+              <a href="#Projetos"
+                ><i class="fa-solid fa-folder-open"></i> Projetos</a
+              >
+            </li>
+            <li>
+              <a href="#Projetos"><i class="fa-solid fa-newspaper"></i> Blog</a>
+            </li>
+          </ul>
+        </nav>
+        <p>
+          Desenvolvedor Full Stack | Java | Spring Boot | SQL | Azure | ITIL |
+          Scrum Certified
+        </p>
+        <p>
+          Eu sou um desenvolvedor backend e apaixonado por tecnologia da
+          informação desde os 12 anos de idade. <br />
+          Atualmente, estou cursando o 4º semestre de Análise e Desenvolvimento
+          de Sistemas.
+        </p>
+
+        <div class="social-links">
+          <a href="https://github.com/CristianAndriel" target="_blank">
+            <i class="fa-brands fa-github fa-2x"></i>
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/cristian-andriel/"
+            target="_blank"
+          >
+            <i class="fa-brands fa-linkedin fa-2x"></i>
+          </a>
+        </div>
+      </section>
+
+      <section class="skills" id="Habilidades">
+        <h2>../Habilidades</h2>
+        <div class="skills-list">
+          <div>
+            <h3>Hard Skills</h3>
+            <ul>
+              <li>Linguagens de programação: Java</li>
+              <li>Bancos de dados: SQL</li>
+              <li>Frameworks: Spring Boot, Itil, Scrum, LGPD</li>
+              <li>Ferramentas: Git, Docker, Azure (básico)</li>
+              <li>Conhecimentos em APIs RESTful</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Soft Skills</h3>
+            <ul>
+              <li>Trabalho em equipe</li>
+              <li>Comunicação clara e eficaz</li>
+              <li>Resolução de problemas</li>
+              <li>Adaptabilidade</li>
+              <li>Gestão de tempo</li>
+            </ul>
+          </div>
+        </div>
+
+        <section class="certifieds">
+          <h2 style="margin-left: -30px;">../Certificações</h2>
+          <div class="slider-container">
+            <div class="slider">
+              <div class="slide">
+                <img src="./assets/imgs/scrum1.png" alt="Certificado 1" />
+              </div>
+              <div class="slide">
+                <img
+                  src="./assets/imgs/metodologiasageis.jpg"
+                  alt="Certificado 2"
+                />
+              </div>
             </div>
+            <button class="prev" onclick="moveSlide(-1)">
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button class="next" onclick="moveSlide(1)">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+          </div>
 
-            <nav class="nav-menu">
-                <ul>
-                    <li><a href="#Habilidades"><i class="fa-solid fa-screwdriver-wrench"></i> Habilidades</a></li>
-                    <li><a href="#Experiencias"><i class="fa-solid fa-briefcase"></i> Experiências</a></li>
-                    <li><a href="#Projetos"><i class="fa-solid fa-folder-open"></i> Projetos</a></li>
-                </ul>
-            </nav>
-            <p>Desenvolvedor Full Stack | Java | Spring Boot | SQL | Azure | ITIL | Scrum Certified</p>
-            <p>Eu sou um desenvolvedor backend e apaixonado por tecnologia da informação desde os 12 anos de idade. <br>
-                Atualmente, estou cursando o 4º semestre de Análise e Desenvolvimento de Sistemas.</p>
+          <script>
+            let currentIndex = 0;
 
-            <div class="social-links">
-                <a href="https://github.com/CristianAndriel" target="_blank">
-                    <i class="fa-brands fa-github fa-2x"></i>
-                </a>
+            function moveSlide(step) {
+              const slides = document.querySelector(".slider");
+              const totalSlides = document.querySelectorAll(".slide").length;
 
-                <a href="https://www.linkedin.com/in/cristian-andriel/" target="_blank">
-                    <i class="fa-brands fa-linkedin fa-2x"></i>
-                </a>
+              currentIndex += step;
+              if (currentIndex >= totalSlides) currentIndex = 0;
+              if (currentIndex < 0) currentIndex = totalSlides - 1;
 
-            </div>
+              const offset = -currentIndex * 100 + "%";
+              slides.style.transform = "translateX(" + offset + ")";
+            }
+          </script>
         </section>
+      </section>
 
-        <section class="skills" id="Habilidades">
-            <h2>Habilidades</h2>
-            <div class="skills-list">
-                <div>
-                    <h3>Hard Skills</h3>
-                    <ul>
-                        <li>Linguagens de programação: Java</li>
-                        <li>Bancos de dados: SQL</li>
-                        <li>Frameworks: Spring Boot, Itil, Scrum, LGPD</li>
-                        <li>Ferramentas: Git, Docker, Azure (básico)</li>
-                        <li>Conhecimentos em APIs RESTful</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Soft Skills</h3>
-                    <ul>
-                        <li>Trabalho em equipe</li>
-                        <li>Comunicação clara e eficaz</li>
-                        <li>Resolução de problemas</li>
-                        <li>Adaptabilidade</li>
-                        <li>Gestão de tempo</li>
-                    </ul>
-                </div>
-            </div>
+      <section class="experience" id="Experiencias">
+        <h2>../Experiências</h2>
+        <div class="experience-item">
+          <h3>Assistente de Governança de TI</h3>
+          <p><strong>Refrigeração Dufrio</strong> | Dez 2023 - Presente</p>
+          <ul>
+            <li>Suporte na criação de funcionalidades para o sistema OTRS.</li>
+            <li>Mapeamento e Otimização de Processos</li>
+            <li>Automação de Processos</li>
+            <li>Suporte Técnico - N1, N2 e N3</li>
+            <li>
+              Criação, manutenção e remoção de serviços na ferramenta OTRS
+            </li>
+            <li>
+              Configuração de filas e subfilas para melhor organização do
+              suporte
+            </li>
+            <li>
+              Implementação de notificações automáticas e respostas padronizadas
+            </li>
+            <li>
+              Exportação e análise de relatórios para gestão de indicadores
+            </li>
+            <li>
+              Compilação e análise de métricas da área de TI, fornecendo
+              insights para tomada de decisão estratégica
+            </li>
+            <li>
+              Responsável por garantir que o setor de TI esteja alinhado aos
+              objetivos estratégicos da empresa, promovendo boas práticas,
+              segurança e otimização dos processos
+            </li>
+          </ul>
+        </div>
+      </section>
 
-            <section class="certifieds">
-                <h2 style="text-align: center;">Certificações</h2>
-                <div class="slider-container">
-                    <div class="slider">
-                        <div class="slide"><img src="./assets/imgs/scrum1.png" alt="Certificado 1"></div>
-                        <div class="slide"><img src="./assets/imgs/metodologiasageis.jpg" alt="Certificado 2"></div>
-                        <div class="slide"><img src="certificado3.jpg" alt="Certificado 3"></div>
-                    </div>
-                    <button class="prev" onclick="moveSlide(-1)"><i class="fa-solid fa-chevron-left"></i></button>
-                    <button class="next" onclick="moveSlide(1)"><i class="fa-solid fa-chevron-right"></i></button>
-                </div>
-        
-                <script>
-                    let currentIndex = 0;
-        
-                    function moveSlide(step) {
-                        const slides = document.querySelector(".slider");
-                        const totalSlides = document.querySelectorAll(".slide").length;
-        
-                        currentIndex += step;
-                        if (currentIndex >= totalSlides) currentIndex = 0;
-                        if (currentIndex < 0) currentIndex = totalSlides - 1;
-        
-                        const offset = -currentIndex * 100 + "%";
-                        slides.style.transform = "translateX(" + offset + ")";
-                    }
-                </script>
-            </section>
-        </section>
+      <section class="projects" id="Projetos">
+        <h2>../Projetos</h2>
+        <li style="list-style: none; color: orange; border: 1px solid; padding: 5px; width: 11%; text-align: center; border-radius: 5px;">Em desenvolvimento</li>
+        <li style="list-style: none; color: rgb(0, 255, 55); border: 1px solid; padding: 5px; width: 11%; text-align: center; border-radius: 5px; margin-top: 5px;">Em produção</li>
+        <div class="project-gallery">
+          <div class="project-item" id="indevelopment">
+            <h3>
+              Validação de Processo Seletivo | Desáfio Bootcamp Bradesco - Java
+              Cloud Native
+            </h3>
+            <p>
+              Desáfio de projeto proposto pela Dio e Bradesco, para testar os
+              conhecimentos adquiridos durante a primeira semana do Bootcamp
+              Bradesco - Java Cloud Native
+            </p>
+            <a
+              href="https://github.com/CristianAndriel/dio-desafio-sistema-validacaoDeProcessoSeletivo.git"
+              target="_blank"
+              >Ver no GitHub</a
+            >
+          </div>
 
-        <section class="experience" id="Experiencias">
-            <h2>Experiências</h2>
-            <div class="experience-item">
-                <h3>Análista de Governança de TI Júnior</h3>
-                <p><strong>Refrigeração Dufrio</strong> | Dez 2023 - Presente</p>
-                <ul>
-                    <li>Suporte na criação de funcionalidades para o sistema OTRS.</li>
-                    <li>Mapeamento e Otimização de Processos</li>
-                    <li>Automação de Processos</li>
-                    <li>Suporte Técnico - N1, N2 e N3</li>
-                    <li>Criação, manutenção e remoção de serviços na ferramenta OTRS</li>
-                    <li>Configuração de filas e subfilas para melhor organização do suporte</li>
-                    <li>Implementação de notificações automáticas e respostas padronizadas</li>
-                    <li>Exportação e análise de relatórios para gestão de indicadores</li>
-                    <li>Compilação e análise de métricas da área de TI, fornecendo insights para tomada de decisão
-                        estratégica</li>
-                    <li>Responsável por garantir que o setor de TI esteja alinhado aos objetivos estratégicos da
-                        empresa, promovendo boas práticas, segurança e otimização dos processos</li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="projects" id="Projetos">
-            <h2>Projetos</h2>
-            <div class="project-gallery">
-                
-                <div class="project-item">
-                    <h3>Validação de Processo Seletivo - Desáfio - Projeto pessoal para estudos</h3>
-                    <p>Desáfio de projeto proposto pela Dio e Bradesco, para testar os conhecimentos adquiridos durante a primeira semana do Bootcamp Bradesco - Java Cloud Native</p>
-                    <a href="https://github.com/CristianAndriel/dio-desafio-sistema-validacaoDeProcessoSeletivo.git" target="_blank">Ver no GitHub</a>
-                </div>
-                
-                <div class="project-item">
-                    <h3>OTRS - Sistema de Gestão de Chamados - Projeto pessoal para estudos</h3>
-                    <p>Este projeto tem como objetivo desenvolver um sistema de gestão de chamados baseado no OTRS (Open
-                        Ticket Request System). A plataforma permitirá o registro, acompanhamento e resolução de tickets
-                        de suporte, proporcionando um fluxo estruturado para atendimento técnico.</p>
-                    <a href="inDevelopment.html" target="_blank">Ver no GitHub</a>
-                </div>
-                <div class="project-item">
-                    <h3>API de E-commerce</h3>
-                    <p>Este projeto tem como objetivo desenvolver uma API REST para e-commerce, utilizando Java e Spring
-                        Boot. A API será responsável por gerenciar produtos, pedidos, usuários e pagamentos, fornecendo
-                        endpoints seguros e escaláveis para integração com sistemas front-end</p>
-                    <a href="inDevelopment.html" target="_blank">Ver no GitHub</a>
-                </div>
-            </div>
-        </section>
+          <div class="project-item" id="indevelopment">
+            <h3>Agendador de Tarefas</h3>
+            <p>
+              Este projeto tem como objetivo desenvolver um sistema de gestão de
+              tarefas, onde o usuário possa se cadastrar e agendar as tarefas. O
+              agendador também deve notificar o usuário com antecedência de 1h
+              antes da tarefa para que ele seja lembrado dela. Esta notificação
+              deve vir via e-mail.
+            </p>
+            <a href="inDevelopment.html" target="_blank">Ver no GitHub</a>
+          </div>
+        </div>
+      </section>
     </div>
 
     <footer>
-        <p>&copy; 2025 Cristian Andriel Silva. Todos os direitos reservados.</p>
-        <a href="https://github.com/CristianAndriel" target="_blank">
-            <i class="fa-brands fa-github fa-2x" style="color: black; font-size: 20px;"></i>
-        </a>
+      <p>&copy; 2025 Cristian Andriel Silva. Todos os direitos reservados.</p>
+      <a href="https://github.com/CristianAndriel" target="_blank">
+        <i
+          class="fa-brands fa-github fa-2x"
+          style="color: black; font-size: 20px"
+        ></i>
+      </a>
 
-        <a href="https://www.linkedin.com/in/cristian-andriel/" target="_blank">
-            <i class="fa-brands fa-linkedin fa-2x" style="color: rgb(41, 127, 255); font-size: 20px;"></i>
-        </a>
+      <a href="https://www.linkedin.com/in/cristian-andriel/" target="_blank">
+        <i
+          class="fa-brands fa-linkedin fa-2x"
+          style="color: rgb(41, 127, 255); font-size: 20px"
+        ></i>
+      </a>
     </footer>
-</body>
 
+    <script src="./assets/scripts/scripts.js"></script>
+  </body>
 </html>

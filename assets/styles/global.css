@@ -1,44 +1,41 @@
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
-
 
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
-    font-family: 'Roboto';
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+  font-family: "Roboto";
 }
 
-
-
 .nav-menu ul {
-    display: flex;
-    gap: 10px;
-    list-style: none;
-    margin-left: -40px;
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  margin-left: -40px;
 }
 
 .nav-menu a {
-    font-size: 12px;
-    color: #818181;
+  font-size: 12px;
+  color: #818181;
 }
 
 .nav-menu a:hover {
-    color: #312f2f;
+  color: #312f2f;
 }
 
 p {
-    color: #818181;
+  color: #818181;
 }
 
 .container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
 }
 
 .about,
@@ -46,8 +43,8 @@ p {
 .experience,
 .projects,
 .certifieds {
-    padding: 20px 40px;
-    margin: 0;
+  padding: 20px 40px;
+  margin: 0;
 }
 
 .about h2,
@@ -55,145 +52,193 @@ p {
 .experience h2,
 .projects h2,
 .certifieds h2 {
-    text-align: start;
-    margin-bottom: 20px;
+  text-align: start;
+  margin-bottom: 20px;
 }
 
 .skills-list {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .skills-list div {
-
-    padding: 20px;
-    margin: 10px;
-    border-radius: 5px;
-    border: 1px solid #5f5f5f31;
-    flex: 1 1 45%;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 5px;
+  border: 1px solid #5f5f5f31;
+  flex: 1 1 45%;
 }
 
 .experience-item,
 .project-item {
-    border: 1px solid #5f5f5f31;
-    padding: 20px;
-    margin: 20px 0;
-    border-radius: 5px;
-
+  border: 1px solid #5f5f5f31;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 5px;
 }
 
 .project-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .project-item {
-    flex: 1 1 30%;
-    margin: 10px;
-    text-align: center;
+  flex: 1 1 30%;
+  margin: 10px;
+  text-align: center;
 }
 
 .project-item img {
-    max-width: 100%;
-    border-radius: 5px;
+  max-width: 100%;
+  border-radius: 5px;
 }
 
 footer {
-    color: #312f2f;
-    text-align: center;
-    padding: 10px 0;
-    margin-top: 20px;
+  color: #312f2f;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 20px;
 }
 
-
 .fa-github:hover {
-    color: #000;
-    /* Preto do GitHub */
+  color: #000;
+  /* Preto do GitHub */
 }
 
 .fa-linkedin:hover {
-    color: rgb(10, 107, 253);
+  color: rgb(10, 107, 253);
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .social-links {
-    font-size: 10px;
-    display: flex;
-    gap: 10px;
+  font-size: 10px;
+  display: flex;
+  gap: 10px;
 }
 
 .social-links a {
-    color: #333;
+  color: #333;
 }
 
 .img-profile {
-    display: flex;
-    gap: 20px;
+  display: flex;
+  gap: 20px;
 }
 
 .img-profile img {
-    width: 45px;
-    height: 45px;
-    margin-top: 15px;
-    border-radius: 50%;
-    object-fit: cover;
+  width: 45px;
+  height: 45px;
+  margin-top: 15px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
-
 .slider-container {
-    position: relative;
-    max-width: 600px;
-    margin: auto;
-    overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+  max-width: 600px;
+  margin-left: -30px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
 .slider {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
+  display: flex;
+  transition: transform 0.5s ease-in-out;
 }
 
 .slide {
-    min-width: 100%;
+  min-width: 100%;
 }
 
 .slide img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    border-radius: 10px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
 }
-
 
 .prev,
 .next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(0, 0, 0, 0.6);
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    cursor: pointer;
-    font-size: 18px;
-    border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 50%;
 }
 
 .prev {
-    left: 10px;
+  left: 10px;
 }
 
 .next {
-    right: 10px;
+  right: 10px;
 }
 
 .prev:hover,
 .next:hover {
-    background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.8);
 }
+
+#indevelopment {
+  border: 1px solid orange;
+}
+
+#development {
+  border: 1px solid rgb(0, 255, 55);
+}
+
+/* Estilos para o Dark Mode */
+.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+  }
+  
+  .dark-mode .container {
+    background-color: #1e1e1e;
+    color: #ffffff;
+  }
+  
+  .dark-mode a {
+    color: #ffcc00;
+  }
+  
+  .dark-mode .nav-menu ul li a {
+    color: #ffcc00;
+  }
+  
+  .dark-mode .project-item {
+    background-color: #262626;
+    border-color: #ffcc00;
+  }
+
+  .dark-mode-toggle {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: #333;
+  }
+  
+  .dark-mode-toggle i {
+    transition: color 0.3s;
+  }
+  
+  .dark-mode .dark-mode-toggle i {
+    color: #ffcc00;
+  }
+  
+  
